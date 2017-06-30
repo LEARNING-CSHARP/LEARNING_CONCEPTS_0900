@@ -56,22 +56,22 @@ namespace LEARNING_CONCEPTS
 			oFile.Attribute = FileAttributes.Hidden;
 			oFile.Attribute = FileAttributes.Hidden | FileAttributes.System | FileAttributes.Archive;
 
-			// Hidden: 1  -> 00000001
-			// System: 2  -> 00000010
+			// Hidden:  1 -> 00000001
+			// System:  2 -> 00000010
 			// Archive: 4 -> 00000100
 			//              ---------
-			//               00000111 -> 7
+			//               00000111 -> 7 = 1 + 2 + 4
 
 			// اگر دقیقا ویژگی فایل مورد نظر مخفی بود
 			if (oFile.Attribute == FileAttributes.Hidden)
 			{
 			}
 
-			// Hidden: 1  -> 00000001
-			// System: 2  -> 00000010
+			// Hidden:  1 -> 00000001
+			// System:  2 -> 00000010
 			// Archive: 4 -> 00000100
 			//              ---------
-			//               00000111 -> 7
+			//               00000111 -> 7 = 1 + 2 + 4
 			//               00000001
 			//               --------
 			//               00000001
