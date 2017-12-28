@@ -1,6 +1,6 @@
 ﻿namespace LEARNING_CONCEPTS
 {
-	//public enum FileAttributes : int
+	//public enum FileAttribute : int
 	//{
 	//	Hidden = 1,
 	//	System = 2,
@@ -9,7 +9,7 @@
 	//	Compressed = 5
 	//}
 
-	public enum FileAttributes : int
+	public enum FileAttribute : int
 	{
 		Hidden = 1,
 		System = 2,
@@ -23,6 +23,6 @@
 		public string Name;
 
 		public int Size;
-		public FileAttributes Attribute;
+		public FileAttribute Attribute;
 	}
 }

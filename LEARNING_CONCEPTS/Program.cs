@@ -6,55 +6,55 @@ namespace LEARNING_CONCEPTS
 	{
 		static void Main(string[] args)
 		{
-			//Person oPerson = new Person();
+			//Person person = new Person();
 
-			//oPerson.Gender = 2;
-			//oPerson.Marriage = 20;
-			//oPerson.FullName = "Ali Reza Alavi";
+			//person.Gender = 2;
+			//person.Marriage = 20;
+			//person.FullName = "Ali Reza Alavi";
 
-			//if (oPerson.Gender == 1)
+			//if (person.Gender == 1)
 			//{
 			//	System.Console.WriteLine("You are female!");
 			//}
 
-			//Person oPerson = new Person();
+			//Person person = new Person();
 
-			//oPerson.Gender = Genders.Male;
-			//oPerson.Marriage = Marriages.Married;
-			//oPerson.FullName = "Ali Reza Alavi";
+			//person.Gender = Gender.Male;
+			//person.Marriage = Marriage.Married;
+			//person.FullName = "Ali Reza Alavi";
 
-			//if (oPerson.Gender == Genders.Female)
+			//if (person.Gender == Gender.Female)
 			//{
 			//	System.Console.WriteLine("You are female!");
 			//}
 
-			//System.Console.WriteLine(oPerson.Gender);
-			//System.Console.WriteLine((int)oPerson.Gender);
+			//System.Console.WriteLine(person.Gender);
+			//System.Console.WriteLine((int)person.Gender);
 
-			//switch (oPerson.Marriage)
+			//switch (person.Marriage)
 			//{
-			//	case Marriages.Single:
+			//	case Marriage.Single:
 			//	{
 			//		break;
 			//	}
 
-			//	case Marriages.Married:
+			//	case Marriage.Married:
 			//	{
 			//		break;
 			//	}
 
-			//	case Marriages.Divorced:
+			//	case Marriage.Divorced:
 			//	{
 			//		break;
 			//	}
 			//}
 
-			File oFile = new File();
+			File file = new File();
 
-			oFile.Size = 1234;
-			oFile.Name = "Somefile.txt";
-			oFile.Attribute = FileAttributes.Hidden;
-			oFile.Attribute = FileAttributes.Hidden | FileAttributes.System | FileAttributes.Archive;
+			file.Size = 1234;
+			file.Name = "Somefile.txt";
+			file.Attribute = FileAttribute.Hidden;
+			file.Attribute = FileAttribute.Hidden | FileAttribute.System | FileAttribute.Archive;
 
 			// Hidden:  1 -> 00000001
 			// System:  2 -> 00000010
@@ -63,7 +63,7 @@ namespace LEARNING_CONCEPTS
 			//               00000111 -> 7 = 1 + 2 + 4
 
 			// اگر دقیقا ویژگی فایل مورد نظر مخفی بود
-			if (oFile.Attribute == FileAttributes.Hidden)
+			if (file.Attribute == FileAttribute.Hidden)
 			{
 			}
 
@@ -77,7 +77,7 @@ namespace LEARNING_CONCEPTS
 			//               00000001
 
 			// اگر در بین ویژگی‌های فایل مورد نظر، ویژگی مخفی وجود داشت
-			if ((oFile.Attribute & FileAttributes.Hidden) == FileAttributes.Hidden)
+			if ((file.Attribute & FileAttribute.Hidden) == FileAttribute.Hidden)
 			{
 			}
 
