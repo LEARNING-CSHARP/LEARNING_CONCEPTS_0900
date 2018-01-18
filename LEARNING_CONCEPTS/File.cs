@@ -18,6 +18,13 @@
 		Compressed = 16
 	}
 
+	// با تشکر از آقای فرهاد حقیقی
+	// برای شرایط ترکیبی اگر
+	// byte	: 8
+	// int	: 32
+	// long	: 64
+	// حالت بیشتر نمی‌توانیم تعریف کنیم
+
 	public class File
 	{
 		public string Name;

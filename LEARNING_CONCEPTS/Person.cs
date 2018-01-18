@@ -33,7 +33,7 @@
 
 
 
-	public enum Gender : int // Note: int is defautl!
+	public enum Gender : int // Note: [int] is defautl!
 	{
 		Male = 10,
 		Female = 20
@@ -53,7 +53,7 @@
 		Z = 20,
 		T, // 21
 		M, // 22
-		   //N  = 20 // Error!
+		//N = 20 // Compile OK, Runtime Error!
 	}
 
 	public class Person

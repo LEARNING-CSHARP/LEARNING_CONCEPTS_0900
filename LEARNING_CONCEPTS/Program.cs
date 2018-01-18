@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LEARNING_CONCEPTS
+﻿namespace LEARNING_CONCEPTS
 {
 	class Program
 	{
@@ -17,37 +15,37 @@ namespace LEARNING_CONCEPTS
 			//	System.Console.WriteLine("You are female!");
 			//}
 
-			//Person person = new Person();
+			Person person = new Person();
 
-			//person.Gender = Gender.Male;
-			//person.Marriage = Marriage.Married;
-			//person.FullName = "Ali Reza Alavi";
+			person.Gender = Gender.Male;
+			person.Marriage = Marriage.Married;
+			person.FullName = "Ali Reza Alavi";
 
-			//if (person.Gender == Gender.Female)
-			//{
-			//	System.Console.WriteLine("You are female!");
-			//}
+			if (person.Gender == Gender.Female)
+			{
+				System.Console.WriteLine("You are female!");
+			}
 
-			//System.Console.WriteLine(person.Gender);
-			//System.Console.WriteLine((int)person.Gender);
+			System.Console.WriteLine(person.Gender);
+			System.Console.WriteLine((int)person.Gender);
 
-			//switch (person.Marriage)
-			//{
-			//	case Marriage.Single:
-			//	{
-			//		break;
-			//	}
+			switch (person.Marriage)
+			{
+				case Marriage.Single:
+				{
+					break;
+				}
 
-			//	case Marriage.Married:
-			//	{
-			//		break;
-			//	}
+				case Marriage.Married:
+				{
+					break;
+				}
 
-			//	case Marriage.Divorced:
-			//	{
-			//		break;
-			//	}
-			//}
+				case Marriage.Divorced:
+				{
+					break;
+				}
+			}
 
 			File file = new File();
 
@@ -78,6 +76,11 @@ namespace LEARNING_CONCEPTS
 
 			// اگر در بین ویژگی‌های فایل مورد نظر، ویژگی مخفی وجود داشت
 			if ((file.Attribute & FileAttribute.Hidden) == FileAttribute.Hidden)
+			{
+			}
+
+			// اگر در بین ویژگی‌های فایل مورد نظر، ویژگی مخفی و نیز سیستمی وجود داشت
+			if ((file.Attribute & (FileAttribute.Hidden | FileAttribute.System)) == (FileAttribute.Hidden | FileAttribute.System))
 			{
 			}
 
