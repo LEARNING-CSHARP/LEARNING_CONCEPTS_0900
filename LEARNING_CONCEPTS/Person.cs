@@ -46,6 +46,10 @@
 		Divorced // 2
 	}
 
+	// New Standard:
+	// Gender NOT Genders
+	// Marriage NOT Marriages
+
 	public enum SomeEnum : int
 	{
 		X = 10,

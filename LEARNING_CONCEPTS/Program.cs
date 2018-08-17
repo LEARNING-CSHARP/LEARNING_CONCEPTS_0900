@@ -6,11 +6,11 @@
 		{
 			//Person person = new Person();
 
-			//person.Gender = 2;
-			//person.Marriage = 20;
+			//person.Gender = 10;
+			//person.Marriage = 1;
 			//person.FullName = "Ali Reza Alavi";
 
-			//if (person.Gender == 1)
+			//if (person.Gender == 20)
 			//{
 			//	System.Console.WriteLine("You are female!");
 			//}

@@ -31,5 +31,6 @@
 
 		public int Size;
 		public FileAttribute Attribute;
+		//public FileAttribute FileAttribute; // Not Recommended!
 	}
 }
