@@ -4,16 +4,34 @@
 	{
 		static void Main(string[] args)
 		{
-			//Person person = new Person();
+			Human human = new Human();
 
-			//person.Gender = 10;
-			//person.Marriage = 1;
-			//person.FullName = "Ali Reza Alavi";
+			human.Gender = 2;
+			human.Marriage = 11;
+			human.FullName = "Ali Reza Alavi";
 
-			//if (person.Gender == 20)
-			//{
-			//	System.Console.WriteLine("You are female!");
-			//}
+			if (human.Gender == 2)
+			{
+				System.Console.WriteLine("You are female!");
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 			Person person = new Person();
 

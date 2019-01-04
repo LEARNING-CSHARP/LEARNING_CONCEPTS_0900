@@ -1,16 +1,16 @@
 ﻿namespace LEARNING_CONCEPTS
 {
-	//public class Person
-	//{
-	//	public Person()
-	//	{
-	//	}
+	public class Human
+	{
+		public Human()
+		{
+		}
 
-	//	public int Gender;
-	//	public byte Marriage;
+		public int Gender;
+		public byte Marriage;
 
-	//	public string FullName;
-	//}
+		public string FullName;
+	}
 
 
 
