@@ -88,9 +88,9 @@
 			// Archive: 4 -> 00000100
 			//              ---------
 			//               00000111 -> 7 = 1 + 2 + 4
-			//               00000001
+			// System:  2 -> 00000010
 			//               --------
-			//               00000001
+			// System:  2 -> 00000010
 
 			// اگر در بین ویژگی‌های فایل مورد نظر، ویژگی مخفی وجود داشت
 			if ((file.Attribute & FileAttribute.Hidden) == FileAttribute.Hidden)
@@ -102,7 +102,7 @@
 			{
 			}
 
-			System.Console.Write("Press [ENTER] To Exit...");
+			System.Console.Write("Press [ENTER] To Exit... ");
 			System.Console.ReadLine();
 		}
 	}
