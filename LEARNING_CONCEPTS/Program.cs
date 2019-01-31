@@ -67,10 +67,10 @@
 
 			File file = new File();
 
-			file.Size = 1234;
-			file.Name = "Somefile.txt";
-			file.Attribute = FileAttribute.Hidden;
-			file.Attribute = FileAttribute.Hidden | FileAttribute.System | FileAttribute.Archive;
+			file.Attribute = File.FileAttribute.Hidden;
+
+			file.Attribute =
+				File.FileAttribute.Hidden | File.FileAttribute.System | File.FileAttribute.Archive;
 
 			// Hidden:  1 -> 00000001
 			// System:  2 -> 00000010
@@ -79,7 +79,7 @@
 			//               00000111 -> 7 = 1 + 2 + 4
 
 			// اگر دقیقا ویژگی فایل مورد نظر مخفی بود
-			if (file.Attribute == FileAttribute.Hidden)
+			if (file.Attribute == File.FileAttribute.Hidden)
 			{
 			}
 
@@ -93,12 +93,13 @@
 			// System:  2 -> 00000010
 
 			// اگر در بین ویژگی‌های فایل مورد نظر، ویژگی مخفی وجود داشت
-			if ((file.Attribute & FileAttribute.Hidden) == FileAttribute.Hidden)
+			if ((file.Attribute & File.FileAttribute.Hidden) == File.FileAttribute.Hidden)
 			{
 			}
 
 			// اگر در بین ویژگی‌های فایل مورد نظر، ویژگی مخفی و نیز سیستمی وجود داشت
-			if ((file.Attribute & (FileAttribute.Hidden | FileAttribute.System)) == (FileAttribute.Hidden | FileAttribute.System))
+			if ((file.Attribute & (File.FileAttribute.Hidden | File.FileAttribute.System)) ==
+				(File.FileAttribute.Hidden | File.FileAttribute.System))
 			{
 			}
 
