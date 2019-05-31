@@ -6,7 +6,7 @@
 	//	System = 2,
 	//	Archive = 3,
 	//	ReadOnly = 4,
-	//	Compressed = 5
+	//	Compressed = 5,
 	//}
 
 
@@ -39,7 +39,7 @@
 	//	System = 2,
 	//	Archive = 4,
 	//	ReadOnly = 8,
-	//	Compressed = 16
+	//	Compressed = 16,
 	//}
 
 	// با تشکر از آقای فرهاد حقیقی
@@ -55,9 +55,8 @@
 	//	{
 	//	}
 
-	//	public string Name;
-
 	//	public int Size;
+	//	public string Name;
 	//	public Attribute Attribute;
 	//}
 
@@ -78,11 +77,8 @@
 		{
 		}
 
-		public string Name;
-
 		public int Size;
+		public string Name;
 		public FileAttribute Attribute;
 	}
-
-
 }

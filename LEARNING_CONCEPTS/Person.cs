@@ -33,17 +33,36 @@
 
 
 
-	public enum Gender : int // Note: [int] is defautl!
+	//public enum Gender // Note: [int] is defautl!
+	//{
+	//	Male = 10,
+	//	Female = 20
+	//}
+
+	//public enum Gender : int
+	//{
+	//	Male = 10,
+	//	Female = 20
+	//}
+
+	public enum Gender : int
 	{
 		Male = 10,
-		Female = 20
+		Female = 20,
 	}
+
+	//public enum Marriage : byte
+	//{
+	//	Single, // 0
+	//	Married, // 1
+	//	Divorced, // 2
+	//}
 
 	public enum Marriage : byte
 	{
-		Single, // 0
-		Married, // 1
-		Divorced // 2
+		Single = 0,
+		Married = 1,
+		Divorced = 2,
 	}
 
 	// New Standard:
@@ -57,7 +76,7 @@
 		Z = 20,
 		T, // 21
 		M, // 22
-		//N = 20 // Compile OK, Runtime Error!
+		//N = 20, // Compile OK, Runtime Error!
 	}
 
 	public class Person
