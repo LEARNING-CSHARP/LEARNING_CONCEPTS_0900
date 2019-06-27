@@ -6,10 +6,10 @@
 		{
 		}
 
-		public int Gender;
-		public byte Marriage;
+		public int Gender { get; set; }
+		public byte Marriage { get; set; }
 
-		public string FullName;
+		public string FullName { get; set; }
 	}
 
 
@@ -76,7 +76,7 @@
 		Z = 20,
 		T, // 21
 		M, // 22
-		//N = 20, // Compile OK, Runtime Error!
+		   //N = 20, // Compile OK, Runtime Error!
 	}
 
 	public class Person
@@ -85,9 +85,9 @@
 		{
 		}
 
-		public Gender Gender;
-		public Marriage Marriage;
+		public Gender Gender { get; set; }
+		public Marriage Marriage { get; set; }
 
-		public string FullName;
+		public string FullName { get; set; }
 	}
 }

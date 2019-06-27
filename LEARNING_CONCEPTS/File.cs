@@ -1,6 +1,6 @@
 ﻿namespace LEARNING_CONCEPTS
 {
-	//public enum Attribute : int
+	//public enum FileAttributes : int
 	//{
 	//	Hidden = 1,
 	//	System = 2,
@@ -33,14 +33,14 @@
 
 
 
-	//public enum Attribute : int
-	//{
-	//	Hidden = 1,
-	//	System = 2,
-	//	Archive = 4,
-	//	ReadOnly = 8,
-	//	Compressed = 16,
-	//}
+	public enum FileAttributes : int
+	{
+		Hidden = 1,
+		System = 2,
+		Archive = 4,
+		ReadOnly = 8,
+		Compressed = 16,
+	}
 
 	// با تشکر از آقای فرهاد حقیقی
 	// برای شرایط ترکیبی اگر
@@ -49,36 +49,34 @@
 	// long	: 64
 	// حالت بیشتر نمی‌توانیم تعریف کنیم
 
-	//public class File
-	//{
-	//	public File()
-	//	{
-	//	}
-
-	//	public int Size;
-	//	public string Name;
-	//	public Attribute Attribute;
-	//}
-
-
-
 	public class File
 	{
-		public enum FileAttribute : int
-		{
-			Hidden = 1,
-			System = 2,
-			Archive = 4,
-			ReadOnly = 8,
-			Compressed = 16
-		}
-
 		public File()
 		{
 		}
 
 		public int Size;
 		public string Name;
-		public FileAttribute Attribute;
+		public FileAttributes Attributes;
 	}
+
+	//public class File
+	//{
+	//	public enum FileAttributes : int
+	//	{
+	//		Hidden = 1,
+	//		System = 2,
+	//		Archive = 4,
+	//		ReadOnly = 8,
+	//		Compressed = 16
+	//	}
+
+	//	public File()
+	//	{
+	//	}
+
+	//	public int Size;
+	//	public string Name;
+	//	public FileAttributes Attributes;
+	//}
 }

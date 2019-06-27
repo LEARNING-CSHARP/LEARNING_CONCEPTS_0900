@@ -67,19 +67,19 @@
 
 			File file = new File();
 
-			file.Attribute = File.FileAttribute.Hidden;
+			file.Attributes = FileAttributes.Hidden;
 
-			file.Attribute =
-				File.FileAttribute.Hidden | File.FileAttribute.System | File.FileAttribute.Archive;
+			file.Attributes =
+				FileAttributes.Hidden | FileAttributes.System | FileAttributes.Archive;
 
-			// Hidden:  1 -> 00000001
-			// System:  2 -> 00000010
+			// Hidden:  1 -> 00000001 OR
+			// System:  2 -> 00000010 OR
 			// Archive: 4 -> 00000100
 			//              ---------
 			//               00000111 -> 7 = 1 + 2 + 4
 
-			// اگر دقیقا ویژگی فایل مورد نظر مخفی بود
-			if (file.Attribute == File.FileAttribute.Hidden)
+			// اگر دقیقا ویژگی فایل مورد نظر سیستمی بود
+			if (file.Attributes == FileAttributes.System)
 			{
 			}
 
@@ -92,14 +92,14 @@
 			//               --------
 			// System:  2 -> 00000010
 
-			// اگر در بین ویژگی‌های فایل مورد نظر، ویژگی مخفی وجود داشت
-			if ((file.Attribute & File.FileAttribute.Hidden) == File.FileAttribute.Hidden)
+			// اگر در بین ویژگی‌های فایل مورد نظر، ویژگی سیستمی وجود داشت
+			if ((file.Attributes & FileAttributes.System) == FileAttributes.System)
 			{
 			}
 
 			// اگر در بین ویژگی‌های فایل مورد نظر، ویژگی مخفی و نیز سیستمی وجود داشت
-			if ((file.Attribute & (File.FileAttribute.Hidden | File.FileAttribute.System)) ==
-				(File.FileAttribute.Hidden | File.FileAttribute.System))
+			if ((file.Attributes & (FileAttributes.Hidden | FileAttributes.System)) ==
+				(FileAttributes.Hidden | FileAttributes.System))
 			{
 			}
 
