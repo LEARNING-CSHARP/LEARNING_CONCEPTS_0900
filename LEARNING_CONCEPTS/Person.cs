@@ -7,19 +7,11 @@
 		}
 
 		public int Gender { get; set; }
+
 		public byte Marriage { get; set; }
 
 		public string FullName { get; set; }
 	}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -65,7 +57,6 @@
 		Divorced = 2,
 	}
 
-	// New Standard:
 	// Gender NOT Genders
 	// Marriage NOT Marriages
 
@@ -86,6 +77,7 @@
 		}
 
 		public Gender Gender { get; set; }
+
 		public Marriage Marriage { get; set; }
 
 		public string FullName { get; set; }

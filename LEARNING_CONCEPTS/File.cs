@@ -28,11 +28,6 @@
 
 
 
-
-
-
-
-
 	public enum FileAttributes : int
 	{
 		Hidden = 1,
@@ -56,7 +51,9 @@
 		}
 
 		public int Size;
+
 		public string Name;
+
 		public FileAttributes Attributes;
 	}
 

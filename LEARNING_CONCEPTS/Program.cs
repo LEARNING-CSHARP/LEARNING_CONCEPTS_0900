@@ -27,12 +27,6 @@
 
 
 
-
-
-
-
-
-
 			Person person = new Person();
 
 			person.Gender = Gender.Male;
@@ -44,8 +38,8 @@
 				System.Console.WriteLine("You are female!");
 			}
 
-			System.Console.WriteLine(person.Gender);
-			System.Console.WriteLine((int)person.Gender);
+			System.Console.WriteLine(person.Gender); // Male
+			System.Console.WriteLine((int)person.Gender); // 10
 
 			switch (person.Marriage)
 			{
