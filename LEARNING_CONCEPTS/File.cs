@@ -50,11 +50,11 @@
 		{
 		}
 
-		public int Size;
+		public int Size { get; set; }
 
-		public string Name;
+		public string Name { get; set; }
 
-		public FileAttributes Attributes;
+		public FileAttributes Attributes { get; set; }
 	}
 
 	//public class File
@@ -72,8 +72,8 @@
 	//	{
 	//	}
 
-	//	public int Size;
-	//	public string Name;
-	//	public FileAttributes Attributes;
+	//	public int Size { get; set; }
+	//	public string Name { get; set; }
+	//	public FileAttributes Attributes { get; set; }
 	//}
 }
