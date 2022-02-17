@@ -25,6 +25,11 @@
 
 
 
+
+
+
+
+
 	//public enum Gender // Note: [int] is defautl!
 	//{
 	//	Male = 10,
@@ -67,7 +72,7 @@
 		Z = 20,
 		T, // 21
 		M, // 22
-		   //N = 20, // Compile OK, Runtime Error!
+		//N = 20, // Compile OK, Runtime Error!
 	}
 
 	public class Person
